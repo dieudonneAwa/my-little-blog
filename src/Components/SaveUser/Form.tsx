@@ -7,11 +7,12 @@ import { FormWrapper, StyledForm } from "./Styled";
 type Props = {
   setUsers: React.Dispatch<React.SetStateAction<User[]>>;
   setUser: React.Dispatch<React.SetStateAction<User>>;
+  setIsEdit: React.Dispatch<React.SetStateAction<boolean>>;
   user: User;
   isEdit: boolean;
 };
 
-const Form = ({ setUsers, user, setUser, isEdit }: Props) => {
+const Form = ({ setUsers, user, setUser, setIsEdit, isEdit }: Props) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value, name } = e.target;
 
@@ -50,6 +51,7 @@ const Form = ({ setUsers, user, setUser, isEdit }: Props) => {
         lastName: "",
         email: "",
       });
+      setIsEdit(false)
     }
   };
 

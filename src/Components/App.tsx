@@ -26,7 +26,13 @@ function App() {
     <ThemeProvider theme={theme}>
       <ResetStyles />
       <GlobalStyles />
-      <SaveUser isEdit={isEdit} setUser={setUser} user={user} setUsers={setUsers} />
+      <SaveUser
+        setIsEdit={setIsEdit}
+        isEdit={isEdit}
+        setUser={setUser}
+        user={user}
+        setUsers={setUsers}
+      />
       <ListUsers setIsEdit={setIsEdit} setUser={setUser} users={users} />
     </ThemeProvider>
   );
