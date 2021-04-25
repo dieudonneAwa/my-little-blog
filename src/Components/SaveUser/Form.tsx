@@ -1,20 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { User } from "../App";
 import { Button } from "../Commons/Button";
 import Input from "../Commons/Input";
 import { FormWrapper, StyledForm } from "./Styled";
 
 type Props = {
-  setUsers: React.Dispatch<React.SetStateAction<User[]>>
-}
+  setUsers: React.Dispatch<React.SetStateAction<User[]>>;
+  setUser: React.Dispatch<React.SetStateAction<User>>;
+  user: User;
+  isEdit: boolean;
+};
 
-const Form = ({ setUsers }: Props) => {
-  const [user, setUser] = useState<User>({
-    firstName: "",
-    lastName: "",
-    email: "",
-  });
-
+const Form = ({ setUsers, user, setUser, isEdit }: Props) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value, name } = e.target;
 
@@ -25,8 +22,36 @@ const Form = ({ setUsers }: Props) => {
   };
 
   const handleSave = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    setUsers((prevState: User[]) => [...prevState, user])
-  }
+    e.preventDefault();
+    if (!isEdit) {
+      setUsers((prevState: User[]) => [
+        ...prevState,
+        { id: prevState.push.length + 1, ...user },
+      ]);
+      setUser({
+        id: "",
+        firstName: "",
+        lastName: "",
+        email: "",
+      });
+    } else {
+      setUsers((prevState: User[]) => {
+        const updateUsers = prevState.map((u) => {
+          if (u.id === user.id) {
+            return { id: prevState.push.length + 1, ...user };
+          }
+          return u;
+        });
+        return updateUsers;
+      });
+      setUser({
+        id: "",
+        firstName: "",
+        lastName: "",
+        email: "",
+      });
+    }
+  };
 
   return (
     <FormWrapper display="flex" flexDirection="column" alignItems="center">
@@ -43,17 +68,26 @@ const Form = ({ setUsers }: Props) => {
         <Input
           onChange={handleChange}
           name="firstName"
+          type="text"
           placeholder="First Name"
+          value={user.firstName}
+          required
         />
         <Input
           onChange={handleChange}
           name="lastName"
+          type="text"
           placeholder="Last Name"
+          value={user.lastName}
+          required
         />
         <Input
           onChange={handleChange}
           name="email"
+          type="email"
           placeholder="Email Address"
+          value={user.email}
+          required
         />
         <Button onClick={handleSave} color="emerald" mt="1rem">
           Save User

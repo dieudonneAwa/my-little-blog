@@ -7,21 +7,27 @@ import SaveUser from "./SaveUser/Form";
 import ListUsers from "./ListUsers";
 
 export type User = {
-  id?: number;
+  id?: number | string;
   firstName: string;
   lastName: string;
   email: string;
 };
 
 function App() {
-  const [users, setUsers] = useState<User[]>([])
-  
+  const [isEdit, setIsEdit] = useState(false);
+  const [users, setUsers] = useState<User[]>([]);
+  const [user, setUser] = useState<User>({
+    firstName: "",
+    lastName: "",
+    email: "",
+  });
+
   return (
     <ThemeProvider theme={theme}>
       <ResetStyles />
       <GlobalStyles />
-      <SaveUser setUsers={setUsers} />
-      <ListUsers users={users} />
+      <SaveUser isEdit={isEdit} setUser={setUser} user={user} setUsers={setUsers} />
+      <ListUsers setIsEdit={setIsEdit} setUser={setUser} users={users} />
     </ThemeProvider>
   );
 }

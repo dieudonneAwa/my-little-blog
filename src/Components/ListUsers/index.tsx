@@ -1,4 +1,5 @@
 import React from "react";
+import { FC } from "react";
 import styled from "styled-components";
 import { User } from "../App";
 import { Box } from "../Commons/Box";
@@ -9,18 +10,25 @@ const Table = styled.table`
   th,
   td {
     text-align: left;
-    border: 1px dashed ${p => p.theme.colors.cultured};
+    border: 1px dashed ${(p) => p.theme.colors.cultured};
     padding: 0.2rem 1rem;
   }
 `;
 
 type Props = {
   users: User[];
+  setUser: React.Dispatch<React.SetStateAction<User>>;
+  setIsEdit: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const ListUsers = ({ users }: Props) => {
+const ListUsers: FC<Props> = ({ users, setUser, setIsEdit }) => {
+  const handleEdit = (user: User) => {
+    setIsEdit(true);
+    setUser(user);
+  };
+
   return (
-    <Box width="950px" p="1rem 2rem" bg="white" height="500px" m="3rem auto">
+    <Box width="950px" p="1rem 2rem" bg="white" m="3rem auto">
       <Table>
         <thead>
           <th>First Name</th>
@@ -35,8 +43,12 @@ const ListUsers = ({ users }: Props) => {
               <td>{user.lastName}</td>
               <td>{user.email}</td>
               <td>
-                <Button py="0.3rem">View</Button>
-                <Button py="0.3rem" color="blueviolet">Edit</Button>
+                <Button
+                  onClick={() => handleEdit(user)}
+                  py="0.3rem"
+                >
+                  Edit
+                </Button>
               </td>
             </tr>
           ))}
