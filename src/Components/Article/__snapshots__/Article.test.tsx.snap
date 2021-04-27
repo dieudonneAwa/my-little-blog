@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article should render Article component 1`] = `
+<Fragment>
+  <styled.span
+    data-test="go-back-btn"
+    onClick={[Function]}
+  >
+    <ArrowBackIcon />
+     Back
+  </styled.span>
+  <styled.form
+    minHeight="300px"
+    width="700px"
+  >
+    <styled.h1 />
+    <p />
+  </styled.form>
+  <styled.form
+    alignItems="center"
+    display="flex"
+    flexDirection="column"
+    flexWrap={
+      Array [
+        "wrap",
+        "nowrap",
+      ]
+    }
+    width="500px"
+  />
+</Fragment>
+`;

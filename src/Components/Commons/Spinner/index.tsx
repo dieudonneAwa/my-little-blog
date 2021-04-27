@@ -1,6 +1,6 @@
-import styled, { keyframes } from "styled-components";
-import { space } from "styled-system";
-import { DefaultTheme } from "../../../Theme";
+import styled, { keyframes } from 'styled-components';
+import { space } from 'styled-system';
+import { DefaultTheme } from '../../../Theme';
 
 const rotate = keyframes`
   from {
@@ -18,14 +18,14 @@ const StyledSpinner = styled.span<{
   theme: DefaultTheme;
 }>`
   &::before {
-    content: "";
+    content: '';
     -webkit-transform-origin: center;
     animation: ${rotate} 500ms infinite linear;
     border-radius: 50%;
-    border: 0.2rem solid ${(p) => p.theme.colors[p.color]};
+    border: 0.2rem solid ${(p) => p.theme.colors.emerald};
     border-right-color: transparent;
     border-top-color: transparent;
-    content: "";
+    content: '';
     display: inline-block;
     height: ${(props) => props.size};
     transform-origin: center;
@@ -37,7 +37,7 @@ const StyledSpinner = styled.span<{
 `;
 
 export const SpinnerContainer = styled.div<{ height: string }>`
-  min-height: ${(props) => (props.height ? props.height : "100%")};
+  min-height: ${(props) => (props.height ? props.height : '100%')};
   width: 100%;
   display: flex;
   justify-content: center;
@@ -63,6 +63,6 @@ export const Spinner = ({ color, size, ...rest }: Props | any) => (
 export default Spinner;
 
 Spinner.defaultProps = {
-  color: "c300",
-  size: "1rem",
+  color: 'c300',
+  size: '1rem',
 };

@@ -14,6 +14,7 @@ export const GlobalStyles = createGlobalStyle<{ theme: DefaultTheme }>`
 
   body {
     font-family: ${(p) => p.theme.font.family.poppins};
+    font-size: ${(p) => p.theme.font.size.medium};
     background: ${(p) => p.theme.colors.lightgrey};
     color: ${(p) => p.theme.colors.spacecadet};
     padding: 0;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import {
   SpaceProps,
   ColorProps,
@@ -8,13 +8,24 @@ import {
   layout,
   color,
   flexbox,
-} from "styled-system";
+  border,
+  BorderProps,
+  position,
+  PositionProps,
+} from 'styled-system';
 
-export type BoxProps = SpaceProps & ColorProps & FlexboxProps & LayoutProps;
+export type BoxProps = SpaceProps &
+  ColorProps &
+  FlexboxProps &
+  LayoutProps &
+  BorderProps &
+  PositionProps;
 
 export const Box = styled.form<BoxProps>`
   ${space}
   ${layout}
   ${color}
+  ${border}
   ${flexbox}
+  ${position}
 `;

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Context Provider should render Context Provider component 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "actions": Object {
+        "fetchArticles": [Function],
+        "fetchComments": [Function],
+        "fetchUsers": [Function],
+        "setArticle": [Function],
+      },
+      "state": Object {
+        "articles": Object {
+          "article": Object {},
+          "articles": Array [],
+          "comments": Array [],
+          "loading": false,
+          "loadingComments": false,
+        },
+        "users": Object {
+          "error": "",
+          "loading": false,
+          "user": Object {},
+          "users": Array [],
+        },
+      },
+    }
+  }
+>
+  <Component />
+</ContextProvider>
+`;

@@ -2,12 +2,12 @@ const fontfamilies = ["'Poppins', sans-serif"];
 
 export const space = {
   none: "0rem",
-  nano: "0.0625rem",
-  micro: "0.125rem",
-  mini: "0.25rem",
-  tiny: "0.5rem",
-  small: "0.75rem",
-  medium: "1rem",
+  nano: "0.065rem",
+  micro: "0.15rem",
+  mini: "0.3rem",
+  tiny: "0.6rem",
+  small: "0.9rem",
+  medium: "1.1rem",
   large: "1.5rem",
   big: "2rem",
   huge: "3rem",

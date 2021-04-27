@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render App component 1`] = `
+<AppPage>
+  <Provider>
+    <App>
+      <Component
+        theme={
+          Object {
+            "colors": Object {
+              "blueviolet": "#5621ab",
+              "cultured": "#1b2546",
+              "emerald": "#1EAE68",
+              "lightgrey": "#11172C",
+              "richblack": "#091A28",
+              "spacecadet": "white",
+              "white": "#1b2546",
+            },
+            "font": Object {
+              "family": Object {
+                "poppins": "'Poppins', sans-serif",
+              },
+              "size": Object {
+                "big": "2rem",
+                "huge": "3rem",
+                "large": "1.5rem",
+                "massive": "4rem",
+                "medium": "1.1rem",
+                "micro": "0.15rem",
+                "mini": "0.3rem",
+                "nano": "0.065rem",
+                "none": "0rem",
+                "small": "0.9rem",
+                "tiny": "0.6rem",
+              },
+            },
+            "radii": Object {
+              "huge": "50%",
+              "large": "9px",
+              "medium": "6px",
+              "none": "0",
+              "small": "3px",
+            },
+            "space": Object {
+              "big": "2rem",
+              "huge": "3rem",
+              "large": "1.5rem",
+              "massive": "4rem",
+              "medium": "1.1rem",
+              "micro": "0.15rem",
+              "mini": "0.3rem",
+              "nano": "0.065rem",
+              "none": "0rem",
+              "small": "0.9rem",
+              "tiny": "0.6rem",
+            },
+          }
+        }
+      >
+        <Memo(l) />
+        <Memo(l) />
+        <styled.form
+          alignItems="center"
+          display="flex"
+          flexDirection="column"
+          position="relative"
+        >
+          <form
+            className="sc-bdvvaa jfYIlR"
+            display="flex"
+          >
+            <styled.span
+              data-test="theme-toggler"
+              onClick={[Function]}
+            >
+              <span
+                className="sc-iqsfdx eGsrqj"
+                data-test="theme-toggler"
+                onClick={[Function]}
+              />
+            </styled.span>
+            <styled.h1>
+              <h1
+                className="sc-kDThTU fuACNF"
+              >
+                Awa's Little Blog
+              </h1>
+            </styled.h1>
+            <BrowserRouter>
+              <Router
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "createHref": [Function],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+              >
+                <Switch>
+                  <Route
+                    computedMatch={
+                      Object {
+                        "isExact": true,
+                        "params": Object {},
+                        "path": "/",
+                        "url": "/",
+                      }
+                    }
+                    exact={true}
+                    location={
+                      Object {
+                        "hash": "",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      }
+                    }
+                    path="/"
+                    render={[Function]}
+                  >
+                    <ArticlesPage
+                      articles={Array []}
+                      fetchArticles={[Function]}
+                      loading={true}
+                      setArticle={[Function]}
+                    >
+                      <styled.form
+                        alignItems="center"
+                        display="flex"
+                        height="500px"
+                        justifyContent="center"
+                      >
+                        <form
+                          className="sc-bdvvaa gkiCYy"
+                          display="flex"
+                          height="500px"
+                        >
+                          <Spinner
+                            color="c300"
+                            size="1rem"
+                          >
+                            <styled.span
+                              color="c300"
+                              size="1rem"
+                            >
+                              <span
+                                className="sc-gsDJrp fxttM"
+                                color="c300"
+                                size="1rem"
+                              />
+                            </styled.span>
+                          </Spinner>
+                        </form>
+                      </styled.form>
+                    </ArticlesPage>
+                  </Route>
+                </Switch>
+              </Router>
+            </BrowserRouter>
+          </form>
+        </styled.form>
+      </Component>
+    </App>
+  </Provider>
+</AppPage>
+`;

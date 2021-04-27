@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner should render Spinner component 1`] = `
+<styled.span
+  color="c300"
+  size="1rem"
+/>
+`;

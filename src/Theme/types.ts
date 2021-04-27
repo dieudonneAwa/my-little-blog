@@ -5,6 +5,7 @@ export type Colors = {
   lightgrey: string;
   white: string;
   blueviolet: string;
+  richblack: string;
 };
 
 export type Space = {
@@ -35,3 +36,32 @@ export type Radii = {
   large: string;
   huge: string;
 };
+
+export type Article = {
+  id: string;
+  createdAt: string;
+  title: string;
+  content: string;
+  createdBy: string;
+};
+
+export type Action = {
+  type: string;
+  payload?: any;
+};
+
+export type User = {
+  id: string;
+  name: string;
+  avatar: string;
+  createdAt: string;
+};
+
+export type Comment = {
+  id: string;
+  name: string;
+  createdAt: string;
+  content: string;
+};
+
+export type AppTheme = 'light' | 'dark';

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleCard should render ArticleCard page component 1`] = `
+<Styled(styled.form)
+  as="article"
+  bg="white"
+  borderColor="cultured"
+  borderStyle="solid"
+  borderWidth="1px"
+  idnumber={NaN}
+  m="0.5rem auto"
+  onClick={[Function]}
+  p="2rem 3rem"
+  width="700px"
+>
+  <styled.h2 />
+  <span />
+  <br />
+  <styled.small>
+    Posted Invalid Date by 484639
+  </styled.small>
+</Styled(styled.form)>
+`;

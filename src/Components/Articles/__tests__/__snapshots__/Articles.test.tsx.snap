@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Articles page should render Articles page component 1`] = `
+<Component
+  theme={
+    Object {
+      "colors": Object {
+        "blueviolet": "#5621ab",
+        "cultured": "#F1F1F1",
+        "emerald": "#1EAE68",
+        "lightgrey": "#FBFBFB",
+        "richblack": "#091A28",
+        "spacecadet": "#1b2546",
+        "white": "white",
+      },
+      "font": Object {
+        "family": Object {
+          "poppins": "'Poppins', sans-serif",
+        },
+        "size": Object {
+          "big": "2rem",
+          "huge": "3rem",
+          "large": "1.5rem",
+          "massive": "4rem",
+          "medium": "1.1rem",
+          "micro": "0.15rem",
+          "mini": "0.3rem",
+          "nano": "0.065rem",
+          "none": "0rem",
+          "small": "0.9rem",
+          "tiny": "0.6rem",
+        },
+      },
+      "radii": Object {
+        "huge": "50%",
+        "large": "9px",
+        "medium": "6px",
+        "none": "0",
+        "small": "3px",
+      },
+      "space": Object {
+        "big": "2rem",
+        "huge": "3rem",
+        "large": "1.5rem",
+        "massive": "4rem",
+        "medium": "1.1rem",
+        "micro": "0.15rem",
+        "mini": "0.3rem",
+        "nano": "0.065rem",
+        "none": "0rem",
+        "small": "0.9rem",
+        "tiny": "0.6rem",
+      },
+    }
+  }
+>
+  <ArticlesPage
+    articles={
+      Array [
+        Object {
+          "content": "Test content",
+          "createdAt": "",
+          "createdBy": "Awa",
+          "id": "1",
+          "title": "Test title",
+        },
+      ]
+    }
+    fetchArticles={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    loading={false}
+    setArticle={[MockFunction]}
+  >
+    <ArticleCard
+      article={
+        Object {
+          "content": "Test content",
+          "createdAt": "",
+          "createdBy": "Awa",
+          "id": "1",
+          "title": "Test title",
+        }
+      }
+      key="1"
+      setArticle={[MockFunction]}
+    >
+      <Styled(styled.form)
+        as="article"
+        bg="white"
+        borderColor="cultured"
+        borderStyle="solid"
+        borderWidth="1px"
+        idnumber={0.3333333333333333}
+        m="0.5rem auto"
+        onClick={[Function]}
+        p="2rem 3rem"
+        width="700px"
+      >
+        <article
+          className="sc-bdvvaa sc-hKwCoD ecjNRd cjyoeq"
+          onClick={[Function]}
+          width="700px"
+        >
+          <styled.h2>
+            <h2
+              className="sc-eCImvq kcyQhs"
+            >
+              Test title
+            </h2>
+          </styled.h2>
+          <span>
+            Test content
+          </span>
+          <br />
+          <styled.small>
+            <small
+              className="sc-jRQAMF eaOvtV"
+            >
+              Posted Invalid Date by 484639
+            </small>
+          </styled.small>
+        </article>
+      </Styled(styled.form)>
+    </ArticleCard>
+  </ArticlesPage>
+</Component>
+`;
