@@ -1,22 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Article should render Article component 1`] = `
-<Fragment>
+<styled.div
+  alignItems="center"
+  display="flex"
+  flexDirection="column"
+  px={
+    Array [
+      "1rem",
+      "1rem",
+    ]
+  }
+>
   <styled.span
     data-test="go-back-btn"
+    left={
+      Array [
+        "1rem",
+        "1rem",
+        "3rem",
+      ]
+    }
     onClick={[Function]}
+    position="absolute"
+    top="3rem"
   >
     <ArrowBackIcon />
      Back
   </styled.span>
-  <styled.form
+  <styled.div
     minHeight="300px"
-    width="700px"
+    width={
+      Array [
+        "100%",
+        "100%",
+        "700px",
+      ]
+    }
   >
     <styled.h1 />
     <p />
-  </styled.form>
-  <styled.form
+  </styled.div>
+  <styled.div
     alignItems="center"
     display="flex"
     flexDirection="column"
@@ -26,7 +51,50 @@ exports[`Article should render Article component 1`] = `
         "nowrap",
       ]
     }
-    width="500px"
-  />
-</Fragment>
+    width={
+      Array [
+        "100%",
+        "100%",
+        "500px",
+      ]
+    }
+  >
+    <styled.div
+      borderColor="cultured"
+      borderStyle="solid"
+      borderTopWidth="1px"
+      minHeight="130px"
+      p="1rem"
+      width="100%"
+    >
+      <styled.div
+        alignItems="center"
+        display="flex"
+        flexWrap="nowrap"
+      >
+        <ForwardRef(withAvatarConfig)
+          name="name"
+          round={true}
+          size="35px"
+        />
+        <styled.div
+          ml="0.5rem"
+          p={0}
+        >
+          <styled.strong>
+            name
+          </styled.strong>
+           
+          <br />
+          <styled.p>
+            Tue Apr 27 2021
+          </styled.p>
+        </styled.div>
+      </styled.div>
+      <p>
+        Content
+      </p>
+    </styled.div>
+  </styled.div>
+</styled.div>
 `;

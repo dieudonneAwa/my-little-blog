@@ -6,6 +6,11 @@ export const ArticleHeading = styled.h1`
   font-weight: 500;
   line-height: 1.3;
   margin-bottom: 1rem;
+
+  @media (max-width: 414px) {
+    font-size: ${(p) => p.theme.font.size.medium};
+    font-weight: 600;
+  }
 `;
 
 export const BackButton = styled.span<PositionProps>`

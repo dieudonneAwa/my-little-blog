@@ -24,7 +24,7 @@ function App() {
       <Box position="relative" display="flex" flexDirection="column" alignItems="center">
         <ThemeToggler
           position="absolute"
-          right={['1rem', '1rem', "3rem"]}
+          right={['1rem', '1rem', '3rem']}
           top="3rem"
           // @ts-ignore
           onClick={() => toggleTheme()}

@@ -82,57 +82,82 @@ exports[`Articles page should render Articles page component 1`] = `
     loading={false}
     setArticle={[MockFunction]}
   >
-    <ArticleCard
-      article={
-        Object {
-          "content": "Test content",
-          "createdAt": "",
-          "createdBy": "Awa",
-          "id": "1",
-          "title": "Test title",
-        }
-      }
-      key="1"
-      setArticle={[MockFunction]}
+    <styled.div
+      px="1rem"
     >
-      <Styled(styled.form)
-        as="article"
-        bg="white"
-        borderColor="cultured"
-        borderStyle="solid"
-        borderWidth="1px"
-        idnumber={0.3333333333333333}
-        m="0.5rem auto"
-        onClick={[Function]}
-        p="2rem 3rem"
-        width="700px"
+      <div
+        className="sc-bdvvaa hroOLu"
       >
-        <article
-          className="sc-bdvvaa sc-hKwCoD ecjNRd cjyoeq"
-          onClick={[Function]}
-          width="700px"
+        <ArticleCard
+          article={
+            Object {
+              "content": "Test content",
+              "createdAt": "",
+              "createdBy": "Awa",
+              "id": "1",
+              "title": "Test title",
+            }
+          }
+          key="1"
+          setArticle={[MockFunction]}
         >
-          <styled.h2>
-            <h2
-              className="sc-eCImvq kcyQhs"
+          <Styled(styled.div)
+            as="article"
+            bg="white"
+            borderColor="cultured"
+            borderStyle="solid"
+            borderWidth="1px"
+            idnumber={0.3333333333333333}
+            m="0.5rem auto"
+            onClick={[Function]}
+            p={
+              Array [
+                "1.5rem 1.5rem",
+                "2rem 3rem",
+              ]
+            }
+            width={
+              Array [
+                "100%",
+                "100%",
+                "700px",
+              ]
+            }
+          >
+            <article
+              className="sc-bdvvaa sc-hKwCoD fdhzRd cjyoeq"
+              onClick={[Function]}
+              width={
+                Array [
+                  "100%",
+                  "100%",
+                  "700px",
+                ]
+              }
             >
-              Test title
-            </h2>
-          </styled.h2>
-          <span>
-            Test content
-          </span>
-          <br />
-          <styled.small>
-            <small
-              className="sc-jRQAMF eaOvtV"
-            >
-              Posted Invalid Date by 484639
-            </small>
-          </styled.small>
-        </article>
-      </Styled(styled.form)>
-    </ArticleCard>
+              <styled.h2>
+                <h2
+                  className="sc-eCImvq fAnUyj"
+                >
+                  Test title
+                </h2>
+              </styled.h2>
+              <span>
+                Test content
+              </span>
+              <br />
+              <styled.small>
+                <small
+                  className="sc-jRQAMF eaOvtV"
+                >
+                  Posted Invalid Date by 484639
+                </small>
+              </styled.small>
+            </article>
+          </Styled(styled.div)>
+        </ArticleCard>
+      </div>
+    </styled.div>
   </ArticlesPage>
 </Component>
 `;

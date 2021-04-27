@@ -7,6 +7,11 @@ export const AppHeading = styled.h1<SpaceProps>`
   margin-top: 3rem;
   margin-bottom: 3rem;
   ${space}
+
+  @media (max-width: 414px) {
+    font-size: ${(p) => p.theme.font.size.large};
+    font-weight: 600;
+  }
 `;
 
 export const ThemeToggler = styled.span<PositionProps>`

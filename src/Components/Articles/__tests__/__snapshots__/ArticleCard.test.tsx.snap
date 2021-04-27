@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ArticleCard should render ArticleCard page component 1`] = `
-<Styled(styled.form)
+<Styled(styled.div)
   as="article"
   bg="white"
   borderColor="cultured"
@@ -10,8 +10,19 @@ exports[`ArticleCard should render ArticleCard page component 1`] = `
   idnumber={NaN}
   m="0.5rem auto"
   onClick={[Function]}
-  p="2rem 3rem"
-  width="700px"
+  p={
+    Array [
+      "1.5rem 1.5rem",
+      "2rem 3rem",
+    ]
+  }
+  width={
+    Array [
+      "100%",
+      "100%",
+      "700px",
+    ]
+  }
 >
   <styled.h2 />
   <span />
@@ -19,5 +30,5 @@ exports[`ArticleCard should render ArticleCard page component 1`] = `
   <styled.small>
     Posted Invalid Date by 484639
   </styled.small>
-</Styled(styled.form)>
+</Styled(styled.div)>
 `;

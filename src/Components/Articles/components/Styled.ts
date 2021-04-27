@@ -46,6 +46,10 @@ export const ArticleHeading = styled.h2<{ theme: DefaultTheme }>`
     color: ${(p) => p.theme.colors.spacecadet};
     transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
   }
+  @media (max-width: 414px) {
+    font-size: ${(p) => p.theme.font.size.medium};
+    font-weight: 600;
+  }
 `;
 
 export const ArticleFooter = styled.small`

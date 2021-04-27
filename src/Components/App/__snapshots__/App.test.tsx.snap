@@ -59,29 +59,46 @@ exports[`App should render App component 1`] = `
       >
         <Memo(l) />
         <Memo(l) />
-        <styled.form
+        <styled.div
           alignItems="center"
           display="flex"
           flexDirection="column"
           position="relative"
         >
-          <form
+          <div
             className="sc-bdvvaa jfYIlR"
             display="flex"
           >
             <styled.span
               data-test="theme-toggler"
               onClick={[Function]}
+              position="absolute"
+              right={
+                Array [
+                  "1rem",
+                  "1rem",
+                  "3rem",
+                ]
+              }
+              top="3rem"
             >
               <span
-                className="sc-iqsfdx eGsrqj"
+                className="sc-iqsfdx eGaodG"
                 data-test="theme-toggler"
                 onClick={[Function]}
               />
             </styled.span>
-            <styled.h1>
+            <styled.h1
+              mt={
+                Array [
+                  "3rem",
+                  "3rem",
+                  "3rem",
+                ]
+              }
+            >
               <h1
-                className="sc-kDThTU fuACNF"
+                className="sc-kDThTU dskGWa"
               >
                 Awa's Little Blog
               </h1>
@@ -137,41 +154,49 @@ exports[`App should render App component 1`] = `
                       loading={true}
                       setArticle={[Function]}
                     >
-                      <styled.form
-                        alignItems="center"
-                        display="flex"
-                        height="500px"
-                        justifyContent="center"
+                      <styled.div
+                        px="1rem"
                       >
-                        <form
-                          className="sc-bdvvaa gkiCYy"
-                          display="flex"
-                          height="500px"
+                        <div
+                          className="sc-bdvvaa hroOLu"
                         >
-                          <Spinner
-                            color="c300"
-                            size="1rem"
+                          <styled.div
+                            alignItems="center"
+                            display="flex"
+                            height="500px"
+                            justifyContent="center"
                           >
-                            <styled.span
-                              color="c300"
-                              size="1rem"
+                            <div
+                              className="sc-bdvvaa gkiCYy"
+                              display="flex"
+                              height="500px"
                             >
-                              <span
-                                className="sc-gsDJrp fxttM"
+                              <Spinner
                                 color="c300"
                                 size="1rem"
-                              />
-                            </styled.span>
-                          </Spinner>
-                        </form>
-                      </styled.form>
+                              >
+                                <styled.span
+                                  color="c300"
+                                  size="1rem"
+                                >
+                                  <span
+                                    className="sc-gsDJrp fxttM"
+                                    color="c300"
+                                    size="1rem"
+                                  />
+                                </styled.span>
+                              </Spinner>
+                            </div>
+                          </styled.div>
+                        </div>
+                      </styled.div>
                     </ArticlesPage>
                   </Route>
                 </Switch>
               </Router>
             </BrowserRouter>
-          </form>
-        </styled.form>
+          </div>
+        </styled.div>
       </Component>
     </App>
   </Provider>
