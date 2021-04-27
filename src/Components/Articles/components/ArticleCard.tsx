@@ -6,7 +6,7 @@ import { ArticleFooter, ArticleHeading, StyledArticle } from './Styled';
 
 export type Props = {
   article: Article;
-  setArticle: (article: Article) => Action
+  setArticle: (article: Article) => Action;
 };
 
 const ArticleCard: FC<Props> = ({ article, setArticle }) => {
@@ -23,7 +23,7 @@ const ArticleCard: FC<Props> = ({ article, setArticle }) => {
       borderStyle="solid"
       borderColor="cultured"
       as="article"
-      width="700px"
+      width={['100%', '100%', '700px']}
       p="2rem 3rem"
       bg="white"
       m="0.5rem auto"

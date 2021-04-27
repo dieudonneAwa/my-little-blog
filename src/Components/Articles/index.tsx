@@ -20,7 +20,7 @@ const ArticlesPage = ({ fetchArticles, articles, setArticle, loading }: Props) =
   }, []);
 
   return (
-    <>
+    <Box px="1rem">
       {articles?.map((article) => (
         <ArticleCard setArticle={setArticle} key={article.id} article={article} />
       ))}
@@ -29,7 +29,7 @@ const ArticlesPage = ({ fetchArticles, articles, setArticle, loading }: Props) =
           <Spinner />
         </Box>
       )}
-    </>
+    </Box>
   );
 };
 

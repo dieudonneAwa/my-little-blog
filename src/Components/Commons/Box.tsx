@@ -21,7 +21,7 @@ export type BoxProps = SpaceProps &
   BorderProps &
   PositionProps;
 
-export const Box = styled.form<BoxProps>`
+export const Box = styled.div<BoxProps>`
   ${space}
   ${layout}
   ${color}

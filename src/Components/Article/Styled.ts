@@ -8,7 +8,7 @@ export const ArticleHeading = styled.h1`
 `;
 
 export const BackButton = styled.span`
-  position: fixed;
+  position: absolute;
   left: 3rem;
   top: 3rem;
   font-size: ${(p) => p.theme.font.size.small};

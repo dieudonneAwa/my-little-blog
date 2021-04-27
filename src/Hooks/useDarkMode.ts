@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { AppTheme } from '../Theme/types';
 
 export const useDarkMode = () => {
-  const [theme, setTheme] = useState<AppTheme>('light');
+  const [theme, setTheme] = useState<AppTheme>('dark');
 
   const setMode = (mode: AppTheme) => {
     setTheme(mode);

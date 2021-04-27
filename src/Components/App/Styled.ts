@@ -8,7 +8,7 @@ export const AppHeading = styled.h1`
 `;
 
 export const ThemeToggler = styled.span`
-  position: fixed;
+  position: absolute;
   top: 3rem;
   right: 3rem;
   cursor: pointer;

@@ -29,11 +29,11 @@ const ArticlePage = ({ article, fetchComments, comments, loadingComments }: Prop
   };
 
   return (
-    <>
+    <Box display="flex" flexDirection="column" alignItems="center" px={['1rem', '1rem']}>
       <BackButton data-test="go-back-btn" onClick={handleClick}>
         <ArrowBackIcon /> Back
       </BackButton>
-      <Box width="700px" minHeight="300px">
+      <Box width={['100%', '100%', '700px']} minHeight="300px">
         <ArticleHeading>{article?.title}</ArticleHeading>
         <p>{article?.content}</p>
       </Box>
@@ -69,7 +69,7 @@ const ArticlePage = ({ article, fetchComments, comments, loadingComments }: Prop
           </Box>
         ))}
       </Box>
-    </>
+    </Box>
   );
 };
 
