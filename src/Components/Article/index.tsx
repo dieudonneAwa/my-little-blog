@@ -44,7 +44,7 @@ const ArticlePage = ({ article, fetchComments, comments, loadingComments }: Prop
         <p>{article?.content}</p>
       </Box>
       <Box
-        width={['100%', '100%', '500px']}
+        width={['100%', '100%', '650px']}
         display="flex"
         flexDirection="column"
         alignItems="center"
