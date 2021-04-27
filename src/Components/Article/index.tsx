@@ -39,7 +39,7 @@ const ArticlePage = ({ article, fetchComments, comments, loadingComments }: Prop
       >
         <ArrowBackIcon /> Back
       </BackButton>
-      <Box width={['100%', '100%', '700px']} minHeight="300px">
+      <Box width={['100%', '100%', '700px']} minHeight="250px">
         <ArticleHeading>{article?.title}</ArticleHeading>
         <p>{article?.content}</p>
       </Box>
