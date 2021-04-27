@@ -30,7 +30,13 @@ const ArticlePage = ({ article, fetchComments, comments, loadingComments }: Prop
 
   return (
     <Box display="flex" flexDirection="column" alignItems="center" px={['1rem', '1rem']}>
-      <BackButton data-test="go-back-btn" onClick={handleClick}>
+      <BackButton
+        position="absolute"
+        top="3rem"
+        left={['1rem', '1rem', '3rem']}
+        data-test="go-back-btn"
+        onClick={handleClick}
+      >
         <ArrowBackIcon /> Back
       </BackButton>
       <Box width={['100%', '100%', '700px']} minHeight="300px">

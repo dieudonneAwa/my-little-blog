@@ -24,7 +24,7 @@ const ArticleCard: FC<Props> = ({ article, setArticle }) => {
       borderColor="cultured"
       as="article"
       width={['100%', '100%', '700px']}
-      p="2rem 3rem"
+      p={['1.5rem 1.5rem', '2rem 3rem']}
       bg="white"
       m="0.5rem auto"
       idnumber={parseInt(article?.id, 10) / 3}

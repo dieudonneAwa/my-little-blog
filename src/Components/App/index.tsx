@@ -21,9 +21,11 @@ function App() {
     <ThemeProvider theme={appTheme === 'light' ? theme : darkTheme}>
       <ResetStyles />
       <GlobalStyles />
-
       <Box position="relative" display="flex" flexDirection="column" alignItems="center">
         <ThemeToggler
+          position="absolute"
+          right={['1rem', '1rem', "3rem"]}
+          top="3rem"
           // @ts-ignore
           onClick={() => toggleTheme()}
           data-test="theme-toggler"
@@ -31,7 +33,7 @@ function App() {
           {appTheme === 'light' && <MoonIcon />}
           {appTheme === 'dark' && <SolarIcon fill="white" />}
         </ThemeToggler>
-        <AppHeading>Awa's Little Blog</AppHeading>
+        <AppHeading mt={['3rem', '3rem', '3rem']}>Awa's Little Blog</AppHeading>
         <BrowserRouter>
           <Switch>
             <Route

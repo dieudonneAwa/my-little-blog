@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { position, PositionProps } from 'styled-system';
 
 export const ArticleHeading = styled.h1`
   font-size: ${(p) => p.theme.font.size.big};
@@ -7,12 +8,10 @@ export const ArticleHeading = styled.h1`
   margin-bottom: 1rem;
 `;
 
-export const BackButton = styled.span`
-  position: absolute;
-  left: 3rem;
-  top: 3rem;
+export const BackButton = styled.span<PositionProps>`
   font-size: ${(p) => p.theme.font.size.small};
   cursor: pointer;
+  ${position}
 
   &:hover {
     color: ${(p) => p.theme.colors.emerald};
