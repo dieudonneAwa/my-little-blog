@@ -53,13 +53,13 @@ const ArticlePage = ({ article, fetchComments, comments, loadingComments }: Prop
           <Box
             borderTopWidth="1px"
             width="100%"
-            minHeight="100px"
+            minHeight="130px"
             borderStyle="solid"
             p="1rem"
             borderColor="cultured"
           >
             <Box display="flex" alignItems="center" flexWrap="nowrap">
-              <Avatar name={comment.name} round size="40px" />
+              <Avatar name={comment.name} round size="35px" />
               <Box ml="0.5rem" p={0}>
                 <CommentName>{comment.name}</CommentName> <br />
                 <CommentTime>{new Date(comment.createdAt).toDateString()}</CommentTime>
