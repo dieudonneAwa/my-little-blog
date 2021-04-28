@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { AxiosResponse } from 'axios';
 import { useEffect } from 'react';
 import { Action, Article } from '../../Theme/types';
