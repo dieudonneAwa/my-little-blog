@@ -33,6 +33,7 @@ function App() {
           {appTheme === 'light' && <MoonIcon />}
           {appTheme === 'dark' && <SolarIcon fill="white" />}
         </ThemeToggler>
+
         <AppHeading mt={['3rem', '3rem', '3rem']}>Awa's Little Blog</AppHeading>
         <BrowserRouter>
           <Switch>
