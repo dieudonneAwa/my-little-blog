@@ -3,7 +3,13 @@ import styled from 'styled-components';
 
 export const Svg = styled.svg<any>`
   path {
-    fill: ${(p) => p.theme.colors.spacecadet};
+    fill: ${(p) => p.theme.colors.spacedet};
+  }
+  &:hover {
+    transition: linear 0.5s stroke;
+    path {
+      fill: ${(p) => p.theme.colors.emerald};
+    }
   }
 `;
 

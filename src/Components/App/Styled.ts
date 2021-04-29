@@ -14,14 +14,13 @@ export const AppHeading = styled.h1<SpaceProps>`
   }
 `;
 
-export const ThemeToggler = styled.span<PositionProps>`
+export const ThemeToggler = styled.button<PositionProps>`
   cursor: pointer;
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   ${position}
-
-  &:hover {
-    transition: linear 0.5s stroke;
-    svg path {
-      stroke: ${(p) => p.theme.colors.emerald};
-    }
-  }
 `;

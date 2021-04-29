@@ -1,12 +1,21 @@
 import * as React from 'react';
-import { Svg } from './ArrowBack';
+import styled from 'styled-components';
 
-function MoonIcon(props: React.SVGProps<SVGSVGElement>) {
+export const Svg = styled.svg<any>`
+  &:hover {
+    transition: linear 0.5s stroke;
+    path {
+      stroke: ${(p) => p.theme.colors.emerald};
+    }
+  }
+`;
+
+function MoonIcon({ stroke = '#000', ...props }: React.SVGProps<SVGSVGElement>) {
   return (
-    <Svg width={22} height={22} fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <Svg width={20} height={20} fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
       <path
-        d="M21 11.9A10.022 10.022 0 1110.1 1 7.794 7.794 0 0021 11.9v0z"
-        stroke="#000"
+        d="M19 10.81A9.018 9.018 0 119.19 1 7.015 7.015 0 0019 10.81v0z"
+        stroke={stroke}
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"
