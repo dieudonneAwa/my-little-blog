@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-const Svg = styled.svg<any>`
+export const Svg = styled.svg<any>`
   path {
     fill: ${(p) => p.theme.colors.spacecadet};
   }
