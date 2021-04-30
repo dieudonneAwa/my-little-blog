@@ -17,7 +17,9 @@ export const AppHeading = styled.h1<SpaceProps>`
 export const ThemeToggler = styled.button<PositionProps>`
   cursor: pointer;
   background: transparent;
+  min-width: 30px;
   width: 30px;
+  min-height: 30px;
   height: 30px;
   display: flex;
   justify-content: center;
